@@ -16,7 +16,7 @@ const Cardapio = () => {
           </header>  
           <section className={style.cardapio}>
             <h3 className={style.cardapio__titulo}> Cardápio </h3>
-            <Buscador/>
+            <Buscador busca={busca} setBusca={setBusca}/>
           </section>
     </main>
  )
