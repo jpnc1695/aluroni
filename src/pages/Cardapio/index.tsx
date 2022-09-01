@@ -6,6 +6,7 @@ const Cardapio = () => {
     <main>
       <nav className={style.menu}> 
           <Logo/>
+         
        </nav>
     </main>
  )
