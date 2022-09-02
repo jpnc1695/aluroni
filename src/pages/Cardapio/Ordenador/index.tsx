@@ -11,7 +11,8 @@ interface Props {
 
 const Ordenador = ({ordenador, setOrdenador}:Props) => {
 
-  const[aberto, setAberto] = useState(false)
+  const[aberto, setAberto] = useState(false);
+  const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome
 
   return(
        <button 
@@ -22,7 +23,7 @@ const Ordenador = ({ordenador, setOrdenador}:Props) => {
             onClick={()=> setAberto(!aberto)}
             onBlur={()=> setAberto(false)}
        >
-            <span>{ordenador||'Ordenar Por'}</span>
+            <span>{nomeOrdenador||'Ordenar Por'}</span>
 
             {aberto? <MdKeyboardArrowUp size={20}/> : <MdKeyboardArrowDown size={20}/>}
 
