@@ -6,9 +6,11 @@ import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 
 const Cardapio = () => {
+
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro]= useState<number|null>(null);
   const [ordenador, setOrdenador] = useState('');
+  
  return (
     <main>
       <nav className={style.menu}> <Logo/> </nav>
