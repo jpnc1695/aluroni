@@ -1,5 +1,6 @@
-import filtros from './filtros.json'
-import style from './Filtros.module.scss'
+import filtros from './filtros.json';
+import style from './Filtros.module.scss';
+import classNames from 'classnames';
 
 type IOpcao = typeof filtros[0]
 interface Props {
@@ -18,10 +19,10 @@ const Filtros = ({filtro, setFiltro}:Props)=> {
       <div className={style.filtros}>
         {filtros.map((opcao) => 
           <button 
-              className={
-                `${style.filtros__filtro}
-                 ${filtro === opcao.id ? style["filtros__filtro--ativo"]: ''}
-                 `} 
+              className={classNames({
+                [style.filtros__filtro]:true,
+                [style['filtros__filtro--ativo']]:filtro === opcao.id
+              })} 
               key={opcao.id} 
               onClick={() => selecionarFiltro(opcao)}
           >
