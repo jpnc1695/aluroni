@@ -1,6 +1,7 @@
 import style from './Ordenador.module.scss'
 import opcoes from './opcoes.json'
 import { useState } from 'react'
+import classNames from 'classnames'
 
 interface Props {
   ordenador:string,
@@ -14,7 +15,10 @@ const Ordenador = ({ordenador, setOrdenador}:Props) => {
   return(
        <button className={style.ordenador} onClick={()=> setAberto(!aberto)}>
             <span>Ordenador ordena à dor </span>
-            <div className={style.ordenador__options}>
+            <div className={classNames({
+               [style.ordenador__options]:true,
+               [style['ordenador__options--ativo']]:aberto
+            })}>
                 {opcoes.map(opcao => (
                     <div className={style.ordenador__option} key={opcao.value}>
                       {opcao.nome}
