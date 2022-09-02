@@ -7,8 +7,8 @@ import Ordenador from './Ordenador';
 
 const Cardapio = () => {
   const [busca, setBusca] = useState('');
-  const [filtro, setFiltro]= useState<number|null>(null)
-
+  const [filtro, setFiltro]= useState<number|null>(null);
+  const [ordenador, setOrdenador] = useState('');
  return (
     <main>
       <nav className={style.menu}> <Logo/> </nav>
@@ -22,7 +22,7 @@ const Cardapio = () => {
                 <Buscador busca={busca} setBusca={setBusca}/>
              <div className={style.cardapio__filtros}>  
                 <Filtros filtro={filtro} setFiltro={setFiltro}/>
-                <Ordenador/>
+                <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
              </div>
           </section>
     </main>
