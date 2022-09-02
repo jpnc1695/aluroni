@@ -13,6 +13,7 @@ const Buscador = ({busca, setBusca}:Props) => {
        <div className={style.buscador}>
         <input
            value = {busca}
+           placeholder='Buscar'
            onChange={e => setBusca(e.target.value)}
         />
         <CgSearch size={20} color="#4C4D5E"/>
