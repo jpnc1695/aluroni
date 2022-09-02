@@ -13,12 +13,17 @@ const Ordenador = ({ordenador, setOrdenador}:Props) => {
   const[aberto, setAberto] = useState(false)
 
   return(
-       <button className={style.ordenador} onClick={()=> setAberto(!aberto)}>
+       <button 
+            className={style.ordenador} 
+            onClick={()=> setAberto(!aberto)}
+            onBlur={()=> setAberto(false)}
+       >
             <span>Ordenador ordena à dor </span>
+            
             <div className={classNames({
                [style.ordenador__options]:true,
                [style['ordenador__options--ativo']]:aberto
-            })}>
+                })}>
                 {opcoes.map(opcao => (
                     <div className={style.ordenador__option} key={opcao.value}>
                       {opcao.nome}
