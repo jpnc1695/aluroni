@@ -22,7 +22,7 @@ const Ordenador = ({ordenador, setOrdenador}:Props) => {
             onClick={()=> setAberto(!aberto)}
             onBlur={()=> setAberto(false)}
        >
-            <span>Ordenador ordena à dor </span>
+            <span>{ordenador||'Ordenar Por'}</span>
 
             {aberto? <MdKeyboardArrowUp size={20}/> : <MdKeyboardArrowDown size={20}/>}
 
