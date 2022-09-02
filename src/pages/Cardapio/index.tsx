@@ -19,10 +19,10 @@ const Cardapio = () => {
           </header>  
           <section className={style.cardapio}>
             <h3 className={style.cardapio__titulo}> Cardápio </h3>
-            <Buscador busca={busca} setBusca={setBusca}/>
+                <Buscador busca={busca} setBusca={setBusca}/>
              <div className={style.cardapio__filtros}>  
-            <Filtros filtro={filtro} setFiltro={setFiltro}/>
-            <Ordenador/>
+                <Filtros filtro={filtro} setFiltro={setFiltro}/>
+                <Ordenador/>
              </div>
           </section>
     </main>
