@@ -4,6 +4,7 @@ import style from  './Cardapio.module.scss';
 import Buscador from './Buscador';
 import Filtros from './Filtros';
 import Ordenador from './Ordenador';
+import Itens from './Itens';
 
 const Cardapio = () => {
 
@@ -26,6 +27,7 @@ const Cardapio = () => {
                 <Filtros filtro={filtro} setFiltro={setFiltro}/>
                 <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
              </div>
+                 <Itens/>
           </section>
     </main>
  )
