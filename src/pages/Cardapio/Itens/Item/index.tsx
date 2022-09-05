@@ -21,10 +21,10 @@ const Item = (props:Props ) => {
             </div>
 
         <div className={style.item__tags}>
-            <div className={classNames({
-                  [style.item__tipo]: true,
-                  [style[`item__tipo__${category.label.toLowerCase()}`]]:true
-            })}
+            <div className={classNames(
+                  style.item__tipo,
+                  style[`item__tipo__${category.label.toLowerCase()}`]
+            )}
             >
                   {category.label}
             </div>
