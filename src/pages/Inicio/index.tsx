@@ -1,4 +1,4 @@
-import cardapio from 'pages/Cardapio/Itens/itens.json'
+import cardapio from 'pages/data/cardapio.json'
 import styles from './Inicio.module.scss'
 
 export default function Inicio() {
