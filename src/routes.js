@@ -10,11 +10,10 @@ const AppRouter = () => {
     <Router>
       <Menu/>
         <Routes>
-          <Route path='/'>
-              <PAginaPadrao>
-                  <Inicio/>
-              </PAginaPadrao>
-          </Route>
+            <Route path='/' element={<PAginaPadrao/>}>
+              <Route index element ={<Inicio/>}/>  
+              <Route path='cardapio' element={<Cardapio/>}/>
+            </Route> 
         </Routes>
     </Router>
   </main>
