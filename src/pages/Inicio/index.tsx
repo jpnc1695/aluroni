@@ -1,4 +1,4 @@
-import cardapio from 'pages/data/cardapio.json'
+import cardapio from '../../data/cardapio.json'
 import styles from './Inicio.module.scss'
 
 const Inicio = () => {
