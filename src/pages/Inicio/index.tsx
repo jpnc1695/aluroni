@@ -1,4 +1,3 @@
-import Menu from '../../components/Menu'
 import cardapio from 'pages/data/cardapio.json'
 import styles from './Inicio.module.scss'
 
@@ -9,7 +8,6 @@ pratosRecomendados = pratosRecomendados.sort(()=> 0.5 - Math.random()).splice(0,
 
   return (
     <section>
-      <Menu/>
       <h3 className={styles.titulo}>
         Recomendações da cozinha
       </h3>

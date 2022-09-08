@@ -4,7 +4,6 @@ import Buscador from './Buscador';
 import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 import Itens from './Itens';
-import Menu from '../../components/Menu'
 
 const Cardapio = () => {
 
@@ -14,7 +13,6 @@ const Cardapio = () => {
   
  return (
     <main>
-      <Menu/>
       <header className={style.header}>
          <div className={style.header__text}>
             A casa do código e da massa 
