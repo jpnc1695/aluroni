@@ -8,7 +8,7 @@ export default function Inicio() {
         Recomendações da cozinha
       </h3>
       <div>
-
+        
       </div>
     </section>
   );
