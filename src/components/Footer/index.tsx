@@ -2,9 +2,9 @@ import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-     <section>
-      
-     </section>
+     <footer className={styles.Footer}>
+
+     </footer>
   )
 }
 
