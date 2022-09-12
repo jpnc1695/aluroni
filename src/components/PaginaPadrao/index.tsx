@@ -1,4 +1,5 @@
 import style from './PaginaPadrao.module.scss'
+import stylesTema from 'styles/Tema.module.scss'
 import {Outlet} from 'react-router-dom'
 
 const Header = ()=> {
@@ -9,7 +10,7 @@ const Header = ()=> {
                   A casa do código e da massa 
                 </div>
             </header> 
-            <div>
+            <div className={stylesTema.container}>
               <Outlet/>
             </div>
         </>
