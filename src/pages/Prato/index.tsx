@@ -9,7 +9,7 @@ const Prato = () => {
 
   return (
     <>
-      <button className={styles.Voltar}>{"< Voltar"}</button>
+      <button className={styles.voltar}>{'< Voltar'}</button>
       <section className={styles.container}>
         <h1 className={styles.titulo}>{prato.title}</h1>
         <div className={styles.imagem}>
