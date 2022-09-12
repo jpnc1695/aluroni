@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const AppRouter = () => {
  return(
-  <main>
+  <main> 
     <Router>
       <Menu/>
         <Routes>
