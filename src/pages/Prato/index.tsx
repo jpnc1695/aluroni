@@ -2,7 +2,9 @@ import styles from './Prato.module.scss'
 
 const Prato = () => {
   return (
-    <section></section>
+    <section>
+      {'Prato <>'}
+    </section>
   )
 }
 

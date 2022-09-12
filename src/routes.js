@@ -1,10 +1,11 @@
 import Inicio from 'pages/Inicio';
 import Cardapio from 'pages/Cardapio';
 import Sobre from 'pages/Sobre';
+import NotFound from 'pages/NotFound';
+import Prato from 'pages/Prato';
 import Menu from 'components/Menu'
 import PAginaPadrao from 'components/PaginaPadrao'
 import Footer from 'components/Footer';
-import NotFound from 'pages/NotFound';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const AppRouter = () => {
@@ -17,8 +18,9 @@ const AppRouter = () => {
               <Route index element ={<Inicio/>}/>  
               <Route path='cardapio' element={<Cardapio/>}/>
               <Route path='sobre' element={<Sobre/>}/>
-              <Route path='*' element={<NotFound/>}/>
             </Route> 
+              <Route path='*' element={<NotFound/>}/>
+              <Route path='prato' element={<Prato/>}/>
         </Routes>
           <Footer/>
     </Router>
