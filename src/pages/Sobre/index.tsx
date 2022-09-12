@@ -11,7 +11,7 @@ const Sobre = () => {
     <section>
       <h3 className={stylesTema.titulo}> Sobre</h3>
       <div className={styles.sobreNos}>
-          <img className={styles.sobreNos__imagem} src={casa} alt="Casa Aluroni" />
+        <img className={styles.sobreNos__imagem} src={casa} alt="Casa Aluroni" />
         <div className={styles.sobreNos__texto}>
           <p>
             Nós do Aluroni oferecemos a vocês, nossos queridos clientes, a Massa
