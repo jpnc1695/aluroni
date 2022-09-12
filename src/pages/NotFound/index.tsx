@@ -9,6 +9,11 @@ const NotFound = () => {
          [styles.container]: true,
          [stylesTema.container]:true
       })}>
+        <div className={styles.voltar}>
+          <button onClick={()=> {}}>
+            {'< Voltar'}
+          </button>
+        </div>
         <NotFoundImg/>
       </div>
   )

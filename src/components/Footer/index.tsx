@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from 'assets/logo.svg';
 
 const Footer = () => {
   return (
-     <footer className={styles.Footer}>
+     <footer className={styles.footer}>
       <Logo/>
      </footer>
   )
