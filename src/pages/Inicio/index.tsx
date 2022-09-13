@@ -12,7 +12,7 @@ pratosRecomendados = pratosRecomendados.sort(()=> 0.5 - Math.random()).splice(0,
 const navigate = useNavigate();
 
 function mostrarDetalhesPrato(prato: typeof cardapio[0]){
- navigate(`/prato/${prato.id}` , {state: {prato}})
+ navigate(`/prato/${prato.id}` , {state: {prato}, replace:true})
 };
 
   return (
