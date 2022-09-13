@@ -29,10 +29,8 @@ const Prato = () => {
             <div
               className={classNames({
                 [styles.tags__tipo]: true,
-                [styles[`tags__tipo__${prato.category.label.toLowerCase()}`]]:
-                  true,
-              })}
-            >
+                [styles[`tags__tipo__${prato.category.label.toLowerCase()}`]]:true
+              })}>
               {prato.category.label}
             </div>
             <div className={styles.tags__porcao}>{prato.size}g</div>
