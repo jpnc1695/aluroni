@@ -1,10 +1,10 @@
 import style from './Item.module.scss'
-import classNames from 'classnames'
+import Tags from 'components/Tags'
 import {Prato} from 'types/Prato'
 
 const Item = (props:Prato ) => {
 
-  const {title, description, category, size, serving, price, photo } = props;
+  const {title, description, photo} = props;
   
   return (
     <div className={style.item}>
@@ -17,6 +17,7 @@ const Item = (props:Prato ) => {
                 <h2>{title}</h2>
                 <p>{description}</p>
             </div> 
+            <Tags {...props} />
       </div>
     </div>
   )
