@@ -44,7 +44,6 @@ const Itens = ({busca, filtro, ordenador}:Props) => {
       }
   }
 
-
   useEffect(()=>{
     const novaLista = cardapio.filter(item =>  testaBusca(item.title) && testaFiltro(item.category.id));
 

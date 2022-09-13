@@ -1,11 +1,8 @@
 import style from './Item.module.scss'
-import cardapio from '../../../../data/cardapio.json'
 import classNames from 'classnames'
 import {Prato} from 'types/Prato'
 
-type Props = Prato
-
-const Item = (props:Props ) => {
+const Item = (props:Prato ) => {
 
   const {title, description, category, size, serving, price, photo } = props;
   
