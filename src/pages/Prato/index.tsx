@@ -1,13 +1,15 @@
 import styles from "./Prato.module.scss";
-import {useLocation} from "react-router-dom";
-import {useNavigate} from 'react-router-dom'
+import {useParams, useNavigate} from "react-router-dom";
 import cardapio from "data/cardapio.json";
 import classNames from "classnames";
 
 const Prato = () => {
+  const { id } = useParams();
+  const prato = cardapio.find(item => item.id === Number(id));
   const navigate = useNavigate();
-  const { state } = useLocation();
-  const { prato } = state as { prato: typeof cardapio[0] };
+  if(!prato){
+    return '';
+  }
 
   return (
     <>
