@@ -4,20 +4,20 @@ import classNames from 'classnames';
 
 const Tags = ({category, size, serving, price}:Prato) => {
   return (
-    <div className={styles.item__tags}>
+    <div className={styles.tags}>
       <div
         className={classNames(
-          styles.item__tipo,
-          styles[`item__tipo__${category.label.toLowerCase()}`]
+          styles.tags__tipo,
+          styles[`tags__tipo__${category.label.toLowerCase()}`]
         )}
       >
         {category.label}
       </div>
-      <div className={styles.item__porcao}>{size}g</div>
-      <div className={styles.item__qtdpessoas}>
+      <div className={styles.tags__porcao}>{size}g</div>
+      <div className={styles.tags__qtdpessoas}>
         Serve {serving} pessoa{serving === 1 ? "" : "s"}
       </div>
-      <div className={styles.item__valor}>R${price.toFixed(2)}</div>
+      <div className={styles.tags__valor}>R${price.toFixed(2)}</div>
     </div>
   );
 };
