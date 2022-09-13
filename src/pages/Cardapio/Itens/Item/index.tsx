@@ -1,8 +1,9 @@
 import style from './Item.module.scss'
 import cardapio from '../../../../data/cardapio.json'
 import classNames from 'classnames'
+import {Prato} from 'types/Prato'
 
-type Props = typeof cardapio[0]
+type Props = Prato
 
 const Item = (props:Props ) => {
 
